@@ -10,7 +10,7 @@ import data from "../data.js";
 
 function Pictures() {
     const items = data.map((item) => {
-        return <PicContainer key={item.id} img={item.img} />
+        return <PicContainer key={item.id} {...item} />
     });
 
 

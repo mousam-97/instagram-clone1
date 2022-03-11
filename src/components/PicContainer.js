@@ -1,13 +1,18 @@
 import React from 'react';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ModeCommentIcon from '@mui/icons-material/ModeComment';
 
-
-function PicContainer(props) {
+function PicContainer({id,img,likes,comments}) {
+    // const {img,likes,comments} = props.item;
     return (
         <div className="pic-container">
-            <img src={props.img} alt="item" />
+            <img src={img} alt="item" />
             <div className="hide">
-                <p>26</p>
-                <p>24</p>
+                <ul>
+                    <li><FavoriteIcon fontSize="small"/>{likes}</li>
+                    <li><ModeCommentIcon fontSize="small"/>{comments}</li>
+                </ul>
+
             </div>
         </div>
     );
