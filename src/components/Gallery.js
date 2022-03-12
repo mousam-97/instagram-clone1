@@ -1,6 +1,5 @@
 import React from 'react';
 import Pictures from "./Pictures";
-import Popup from "./Popup";
 import Profile from "./Profile";
 
 

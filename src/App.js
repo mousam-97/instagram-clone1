@@ -5,7 +5,6 @@ import Popup from "./components/Popup";
 import { useEffect } from "react";
 import { fetchItems } from "./store/actions/photosActions";
 import {
-  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -19,7 +18,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchItems());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">

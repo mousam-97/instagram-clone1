@@ -6,7 +6,6 @@ import React from 'react';
 // import photo5 from "../assets/images/photo5.jpeg";
 // import photo6 from "../assets/images/photo6.jpeg";
 import PicContainer from "./PicContainer";
-import data from "../data.js";
 import { useSelector } from "react-redux";
 
 function Pictures() {

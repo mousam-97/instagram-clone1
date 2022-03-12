@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { removeSelected, updateItem } from "../store/actions/photosActions";
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
@@ -17,7 +16,6 @@ function Popup({ id, img, location, caption, likes }) {
 
     function handleLike() {
         dispatch(updateItem(id));
-        console.log("clicked", id);
     }
 
     const handleDoubleClick = () => {
@@ -28,8 +26,8 @@ function Popup({ id, img, location, caption, likes }) {
         <div className="popup">
             <button onClick={handleClick}>X</button>
             <div className="popup__container">
-                <div className="popup__image" onDoubleClick={handleDoubleClick}>
-                    <img src={img} alt="pic1" />
+                <div className="popup__image" >
+                    <img src={img} alt="pic1" onDoubleClick={handleDoubleClick} />
                 </div>
                 <div className="popup__content">
 
