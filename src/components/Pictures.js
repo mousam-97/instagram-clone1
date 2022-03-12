@@ -7,16 +7,20 @@ import React from 'react';
 // import photo6 from "../assets/images/photo6.jpeg";
 import PicContainer from "./PicContainer";
 import data from "../data.js";
+import { useSelector } from "react-redux";
 
 function Pictures() {
-    const items = data.map((item) => {
+
+    const items = useSelector((state) => state.photos.items);
+
+    const picturesList = items.map((item) => {
         return <PicContainer key={item.id} {...item} />
     });
 
 
     return (
         <div className="pictures">           
-            {items}           
+            {picturesList}           
         </div>
     );
 }

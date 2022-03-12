@@ -2,12 +2,19 @@ import { useDispatch, useSelector } from "react-redux";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Popup from "./components/Popup";
-import data from "./data.js";
 import { useEffect } from "react";
 import { fetchItems } from "./store/actions/photosActions";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Newsfeed from "./components/Newsfeed";
 
 function App() {
-  const items = useSelector((state) => state.photos.items);
+  const item = useSelector((state) => state.photos);
+  const {selectedItem} = item;
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,12 +23,14 @@ function App() {
 
   return (
     <div className="App">
-      {data.map((item) => {
-        return item.open && <Popup item={item} />;
-      })}
-      {/* <Popup /> */}
+      {selectedItem.id && <Popup {...selectedItem}/>}
+
       <Header />
-      <Gallery />
+      <Routes>
+
+        <Route path="/profile" element={<Gallery />} />
+        <Route path="/" element={<Newsfeed />} />
+      </Routes>
 
     </div>
   );

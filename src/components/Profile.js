@@ -8,13 +8,13 @@ function Profile() {
                 <img className="profile-picture-image"  src={user} alt="profile" />
             </div>
             <div className="profile-details">
-                <p className="username">through_my_quirky_lens</p>
+                <p className="username">Butterflysly</p>
                 <div className="details">
                     <p><strong>40</strong> posts</p>
                     <p><strong>283</strong> followers</p>
                     <p><strong>274</strong> following</p>
                 </div>
-                <p><strong>Rushabh Shah</strong></p>
+                <p><strong>Kylie Jenner</strong></p>
                 <p>The world through my lens</p>
             </div>
         </div>
