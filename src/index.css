@@ -173,6 +173,10 @@ code {
   font-size: 20px;
 }
 
+.popup button:hover {
+  cursor: pointer;
+}
+
 .popup__container {
   width: 900px;
   height: 600px;
