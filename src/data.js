@@ -1,7 +1,7 @@
 const data = [
     {
         id: 1,
-        img: require("./assets/images/photo1.jpeg"),
+        img: require("./assets/images/photo1.jpg"),
         location: "switzerland",
         likes: 24,
         comments: 48,
@@ -10,7 +10,7 @@ const data = [
     },
     {
         id: 2,
-        img: require("./assets/images/photo2.jpeg"),
+        img: require("./assets/images/photo2.jpg"),
         location: "Paris",
         likes: 10,
         comments: 238,
@@ -19,7 +19,7 @@ const data = [
     },
     {
         id: 3,
-        img: require("./assets/images/photo3.jpeg"),
+        img: require("./assets/images/photo3.jpg"),
         location: "USA",
         likes: 90,
         comments: 486,
@@ -28,7 +28,7 @@ const data = [
     },
     {
         id: 4,
-        img: require("./assets/images/photo4.jpeg"),
+        img: require("./assets/images/photo4.jpg"),
         location: "Canada",
         likes: 2,
         comments: 8,
@@ -37,7 +37,7 @@ const data = [
     },
     {
         id: 5,
-        img: require("./assets/images/photo5.jpeg"),
+        img: require("./assets/images/photo5.jpg"),
         location: "Hong kong",
         likes: 57,
         comments: 100,
@@ -46,7 +46,7 @@ const data = [
     },
     {
         id: 6,
-        img: require("./assets/images/photo6.jpeg"),
+        img: require("./assets/images/photo6.jpg"),
         location: "Japan",
         likes: 1,
         comments: 77,
